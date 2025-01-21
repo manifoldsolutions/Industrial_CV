@@ -1,0 +1,267 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty One Seconds Resume/CV
+% LaTeX Template
+% Version 1.2 (2024/06/26)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+%
+% License
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Alessandro Trinca Tornidor (alessandro at trinca dot tornidor dot com)
+%% Copyright 2022-now Alessandro Trinca Tornidor (alessandro at trinca dot tornidor dot com)
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Alessandro Trinca Tornidor
+%
+% This work consists of the files template.tex and twentyonesecondcv.cls
+% and the derived file twentyonesecondcv.pdf
+%
+% see https://github.com/trincadev/cv-latex-twentyoneseconds/ for updates
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentyonesecondcv}
+% a4paper for A4
+
+%\profilepic{image.png} % Profile picture
+\cvjobtitle{Mathematics Virtuoso} 
+% Job title/career
+\cvname{Vadim K. Weinstein} % Your name
+\usepackage{tabularx}
+%% Mandatory informations used by \makeinfoprofile. 
+% To hide these fields leave the contents of the 
+% macro empty (e.g. '\cvsitepersonal{}' instead than 
+% \cvsitepersonal{en.wikipedia.org}')
+%% See https://tex.stackexchange.com/a/692525/109031
+\cvbirthdate{08 January 1986}
+\cvnumberphone{+358503444045}
+\cvaddressurl{https://orcid.org/0000-0001-5197-5017}
+\cvaddress{Oulu, Finland}        % Short address/location, use \newline if more than 1 line is required
+\cvsitepersonal{https://www.manifoldsolutions.io}       % personal site
+\cvstackoverflow{}
+\cvlinkedin{vadim-k-weinstein}
+\cvskypeurlbase{}%join.skype.com/invite/id-random-skype-invite} % Skype 
+\cvskypeurl{}%{name-surname-skype}
+\cvgithub{}%{name-surname-github}     
+\cvmail{vadim.weinstein@oulu.fi}
+\usepackage{multicol}
+\textfootersidenote{{\it The essence of mathematics is its freedom.}}%
+{-- Georg Cantor (1845-1918)}
+
+%\pagenumber{Page}{of}
+
+\begin{document}
+\sidesection{
+    \makeheaderprofile
+    % \makeheaderprofilenoimg
+    
+    \makeinfoprofile
+
+    \graytext{Date of CV: \today}
+    
+    \customsidesection{Mathematician}{Using mathematics for
+      robotics, data engineering solutions, game engines, AI, and
+      cognitive science.
+      Regularly solving open mathematical problems both
+      in academic and industrial context. Years of experience 
+      made me a \textbf{\underline{a fast learner}}, 
+      \textbf{\underline{sharp} \underline{problem} \underline{solver}}
+      and an expert \textbf{\underline{precise thinker}}.
+      %Be it a
+      %project description, a white paper, or a data structure, I
+      %quickly see the logical structure.
+    }
+
+    \customsidesection{Communicator}%
+    { I have lectured numerous courses from
+      mathematics of machine learning to abstract
+      algebra. This has trained me in public speaking and taught me
+      how to \textbf{\underline{communicate complex topics} 
+      \underline{to diverse audiences}}.
+      I host a
+      \href{https://www.youtube.com/@purposefulmath}{podcast}
+      on math careers, and I am regularly 
+      \textbf{\underline{invited to speak}}
+      to both on scientific and industrial events.
+    }
+
+    \customsidesection{Leader}%
+    { I have managed multiple projects from thesis supervision
+      to academic papers of a team of authors, overseen
+      course design, and lead consulting projects.
+      I am a visionary who keeps the 
+      \textbf{\underline{team} \underline{spirit}} up.
+      I have learned
+      to \textbf{\underline{break} \underline{down complex projects} 
+      \underline{into} \underline{managaeble
+      tasks and distribute} \underline{them to the right people}}.
+    }
+    
+    \customskills{Languages}{{German/3.5},{Russian/6},{Finnish/6},{English/5.6}}
+    {}
+
+    \customskills{Programming}{{\LaTeX/6},{Java/3.5},{--Pandas/4.5},{--Keras/4.5},{Python/5.2}}{}
+    
+    \makefootersidenodevfill
+}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% for some reason it's impossible to have a new line here...
+\mainsection{
+    \section{About me}
+
+    
+An interdisciplinary scientist
+with a PhD in mathematical logic,
+MSc in cognitive science, and
+a publication record in math,
+computer science, cognitive 
+science, and robotics. 
+An entrepreneur specializing
+in head hunting math PhD's.
+Bringing together disconnected
+ideas under a formal foundation.
+Building bridges
+between scientific and business communities.
+
+    \section{Academic positions}
+
+    %My career started in pure mathematics, took a turn
+    %through cognitive science with current focus on robotics.
+    %Positions in reverse chorological order:
+   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+	2020-&\parbox[t]{0.83\textwidth}{%
+		% \textbf{#2}%
+		Associate Professor (non-tenured) %
+		\hfill%
+		{\footnotesize University of Oulu}\\%
+		\graytext{Mathematical foundations of robotics and AI}	
+        \vspace{\parsep}%
+	}\\
+	2019-&\parbox[t]{0.83\textwidth}{%
+		% \textbf{#2}%
+		Adjunct Professor %
+		\hfill%
+		{\footnotesize University of Helsinki}\\%
+           \graytext{Mathematics}
+        \vspace{\parsep}%
+	}\\
+	2012-2019 &\parbox[t]{0.83\textwidth}{%
+		% \textbf{#2}%
+		Principal investigator, lecturer %
+		\hfill%
+		{\footnotesize University of Helsinki}\\
+        \graytext{Mathematics, logic, computer science, AI}\hfill%
+		{\footnotesize University of Vienna}\\
+        \phantom{d}\hfill%
+		{\footnotesize Aalto University}
+        \vspace{\parsep}%
+	}
+    \end{tabular*}
+    %My career started in pure mathematics, took a turn
+    %through cognitive science with current focus on robotics.
+    %Positions in reverse chorological order:
+\section{Degrees and titles}
+   \vspace{-20pt}
+   \begin{multicols}{2}
+    \begin{twentyshort}
+      \twentyitemshort
+        {2018}
+        {Title of Docent (U. Helsinki)}
+      \twentyitemshort
+        {2016}
+        {MSc cognitive science (U. Vienna)}
+    \end{twentyshort}
+    \begin{twentyshort}
+      \twentyitemshort
+        {2011}
+        {PhD math. logic (U. Helsinki)}
+      \twentyitemshort
+        {2009}
+        {MSc mathematics (U. Helsinki)}
+    \end{twentyshort}
+   \end{multicols}
+
+   \vspace{-20pt}
+    %\begin{itemize}
+    %  \item A \textbf{bold word} made with the \textbackslash\texttt{textbf\{\}}
+    %  \item A \graytext{gray phrase} made with the \textbackslash\texttt{graytext\{\}} command instead than overriding \textbackslash\texttt{bfseries} like before
+    %  \item A \textcolor{red}{red phrase} made with the \textbackslash\texttt{textcolor\{\}\{\}} command (the first argument is the color, the second one is the text).
+    %\end{itemize}
+
+    \section{Publications}    
+
+    %\vspace{5pt}
+    
+      \noindent I have 24 peer-reviewed publications in
+      mathematics (15), cognitive science (3) and robotics (6).
+      I am regularly invited to write
+      popular articles on mathematics, math and art, math and AI. For more details
+      see my \href{https://orcid.org/0000-0001-5197-5017}{\underline{ORCID-profile}}.
+     
+      $\Rightarrow$ \textbf{Fast and precise writer of technical reports. 
+      Proficient at structuring text and communicating complex ideas
+      in a short and concise way.}\\
+      $\Rightarrow$ \textbf{Creative problem solver.}
+
+    \section{Teaching and outreach}    
+
+     Lectured total of 14 courses on pure math, computer science, and AI, many of which I authored 100~\% myself. I have supervised many BSc, MSc, and PhD students. I am regularly invited as a lecturer and/or panel member.
+     I have been interviewed on Finnish radio and newspapers.
+     
+      $\Rightarrow$ \textbf{Great public speaking skills.
+      Excellent at explaining complex topics to a wide and diverse audience. Know how to put complex ideas in an accessible graphic and verbal format.}
+      
+    \section{Entrepreneurship}    
+    
+    \begin{twentyshort} % Environment for a list with descriptions  
+        \twentyitemshort{2021 - }{Founder \& CEO of head hunting company Manifold Solutions}
+        \twentyitemshort{2017 - 2020}{Freelance data science consulting \& mathematical modelling
+        in \\ financial \& gaming industries}
+    \end{twentyshort}
+  
+
+    \section{ML \& AI Experience}    
+   
+     I have lectured four self-authored courses on mathematics
+     of machine learning covering topics from ICA, Boltzmann machines, and 
+     Hopfield networks to math of backpropagation, and theory of supervised 
+     \& reinforcement learning. 
+
+     \vspace{5pt}
+
+     In consulting jobs I have used \texttt{Python} to write
+     DL algorithms using mainly \texttt{Tensorflow} for everything from
+     image recognition and generation, to reinforcement learning.
+
+     \section{Organizational}    
+
+     \begin{twenty}
+      \twentyitem
+        {2023}
+        {Conference organizer}
+        {\href{https://www.situated-agency.eu}{PaMoSA23}}
+        {\small Organizing the conference Philosophy and Mathematics
+        of Situated Agency which brought together world top 
+        roboticists, philosophers, and cognitive 
+        scientists to cross-pollinate.}
+      \end{twenty}
+%% end main section
+}
+% \newpage
+
+
+\end{document}
